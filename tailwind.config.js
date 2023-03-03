@@ -18,6 +18,11 @@ module.exports = {
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'],
       },
+      fontSize: {
+        46: ['46px', '57.5px'],
+        32: ['32px', '40px'],
+        28: ['28px', '35px'],
+      },
       backgroundImage: {
         'hero-img': 'url(/images/bg-header-mobile.png)',
       },
