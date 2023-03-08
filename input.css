@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.h2-style {
+@layer base {
+  h2 {
     @apply pb-4 text-28 font-semibold text-darkGrayishBlue md:text-4xl;
-}
+  }
 
-.h3-style {
+  h3 {
     @apply text-2xl font-semibold text-darkGrayishBlue;
+  }
 }
 
 body {
@@ -26,4 +23,9 @@ body {
     body {
         background-image: url('/images/bg-header-mobile.png');
     }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
