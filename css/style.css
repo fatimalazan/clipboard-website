@@ -419,6 +419,13 @@ video {
   display: none;
 }
 
+body {
+  background-image: url('/images/bg-header-desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 h2 {
   padding-bottom: 1rem;
   font-size: 28px;
@@ -537,8 +544,20 @@ h3 {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
+.button {
+  border-radius: 9999px;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  --tw-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+  --tw-shadow-colored: 0px 10px 20px var(--tw-shadow-color), inset 0px -3px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-duration: 200ms;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .relative {
@@ -584,10 +603,6 @@ h3 {
 
 .max-w-md {
   max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .max-w-sm {
@@ -825,13 +840,6 @@ h3 {
   transition-duration: 200ms;
 }
 
-body {
-  background-image: url('/images/bg-header-desktop.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
 @media (max-width: 376px) {
   body {
     background-image: url('/images/bg-header-mobile.png');
@@ -840,7 +848,7 @@ body {
 
 .ficon:hover {
   filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
-    brightness(101%) contrast(94%);
+      brightness(101%) contrast(94%);
 }
 
 .hover\:text-strongCyan:hover {

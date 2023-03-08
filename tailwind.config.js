@@ -23,9 +23,6 @@ module.exports = {
         32: ['32px', '40px'],
         28: ['28px', '35px'],
       },
-      backgroundImage: {
-        'hero-img': 'url(/images/bg-header-mobile.png)',
-      },
       boxShadow: {
         'green-3xl': '0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333)',
         'blue-3xl': '0px 10px 20px rgba(0, 0, 0, 0.0988035), inset 0px -3px 0px rgba(0, 0, 0, 0.151333)',
